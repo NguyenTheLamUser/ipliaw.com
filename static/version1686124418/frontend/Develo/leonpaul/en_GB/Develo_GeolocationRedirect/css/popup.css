@@ -1,0 +1,56 @@
+#develo-geolocate-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #f8f8f8;
+    padding: 60px;
+    width: 500px;
+    text-align: center;
+    z-index: 999;
+    -webkit-box-shadow: 10px 10px 28px -13px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 10px 10px 28px -13px rgba(204, 204, 204, 1);
+    box-shadow: 10px 10px 28px -13px rgba(204, 204, 204, 1);
+}
+
+@media all and ( max-width: 800px) {
+    #develo-geolocate-modal {
+        transform: none;
+        top: 25px;
+        left: 15px;
+        bottom: 25px;
+        right: 15px;
+        align-items: center;
+        z-index: 999;
+        width: auto;
+    }
+    #develo-geolocate-modal .geolocate-modal-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 50px;
+    }
+}
+
+#develo-geolocate-modal h3 {
+    margin-bottom: 50px;
+}
+
+#geolocate-redirect-btn {
+    margin-left: 20px;
+}
+
+@media all and (max-width: 434px) {
+    #develo-geolocate-modal button,
+    #develo-geolocate-modal a {
+        width: 100%;
+    }
+    #develo-geolocate-modal a {
+        margin: 20px 0 0 0;
+    }
+}
